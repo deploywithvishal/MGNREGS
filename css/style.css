@@ -1,0 +1,31 @@
+
+ /* Custom dropdown (for better option style) */
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='16' viewBox='0 0 20 20' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M5.5 7l4.5 4.5L14.5 7'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+  }
+
+  /* When dropdown opens (browser-native, mimic via focus) */
+  select:focus {
+    background-color: #f8fff8;
+    border-color: #34d399;
+    box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.2);
+  }
+
+  /* Style the dropdown options */
+  select option {
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  select option:hover {
+    background-color: #e6f9ee;
+    color: #111;
+  }
